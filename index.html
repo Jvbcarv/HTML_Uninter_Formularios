@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+
+<!--Inserção de data e hora-->
+    <h2>Inserção da data e hora:</h2>
+    <form> <!--Inserção de hora-->
+        <label for="hora">Escolha um horário:</label>
+        <input type="time" id="hora" name="hora">
+        <br><br>
+        <label for="data">Escolha uma data:</label>
+        <input type="date" id="data" name="data">
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <hr>
+
+<!--Formulário para Seleção da dados-->
+    <h2> Formulário para seleção de dados permitindo ao usuário escolher apenas uma opção dentro de um mesmo grupo. </h2> 
+    <form>
+        <p>Quais linguagens você aprenderá agora?</p>
+        
+        <input type="radio" id="Java" name="linguagens" value="Java">
+        <label for="Java"> Java </label><br>
+        
+        <input type="radio" id="PHP" name="linguagens" value="PHP>
+        <label for="PHP"> PHP </label><br>
+        
+        <input type="radio" id="JavaScript" name="linguagens" value="JavaScript">
+        <label for="JavaScript"> JavaScript </label><br>
+
+        <input type="radio" id="Python" name="linguagens" value="Python">
+        <label for="Python"> Python </label><br><br>
+        
+        <button type="submit"> Enviar </button>
+    </form>
+    <hr>
+
+    <h2> Formulário para seleção de dados permitindo ao usuário escolher uma ou mais opções entre várias disponíveis. </h2> 
+    <form>
+        <p>Onde você estudará essa linguagem?</p>
+
+        <input type="checkbox" id="curso_livre" name="local[]" value="curso_livre">
+        <label for="curso_livre"> Curso livre (exemplo Alura, Udemy...) </label><br>
+
+        <input type="checkbox" id="youtube" name="local[]" value="youtube">
+        <label for="youtube">Youtube</label><br>
+
+        <input type="checkbox" id="Faculdade" name="local[]" value="Faculdade">
+        <label for="Faculdade">Faculdade</label><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <hr>
+
+<!--Lista Suspensa-->
+    <h2> Lista suspensa(dropdown menus). </h2>
+    <form>
+        <label for="tempo">Quanto tempo pretende estudar essa linguagem:</label>
+        <select name="tempo" id="tempo">
+            <option value="3">3 meses</option>
+            <option value="6">6 meses</option>
+            <option value="1">1 ano</option>
+        </select>
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <hr>
+
+<!--Formulário para inserção de número-->
+    <h2> Formulário para inserção de número. </h2> 
+    <form>
+        <label for="numero">Digite a quantidade de exercícios que fará com a linguagem selecionada:</label>
+        <input type="number" id="numero" name="numero">
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <hr>
+
+<!--Formulário para inserção de texto-->
+    <h2> Formulário para inserção de texto. </h2> 
+    <form action="" method="" > 
+        <table> 
+            <tr> 
+                <th><label for="nome"> Nome: </label></th> 
+                <td><input type="text" name="nome" id="nome"></td> 
+            </tr> 
+            <tr> 
+                <th><label for="email"> E-mail: </label></th> 
+                <td><input type="email" name="email" id="email"></td> 
+            </tr> 
+            <tr> 
+                <th><label for="msg"> Digite sua Mensagem: </label></th> 
+                <td><textarea name="msg" rows="5" cols="40"> Digite sua mensagem </textarea></td> 
+            </tr> 
+            <tr> 
+                <td></td>  
+                <td> <button> Enviar </button></td> 
+                </tr> 
+            </table> 
+    </form> 
+    <br>
+    <hr>
+    
+</body>
+</html>
